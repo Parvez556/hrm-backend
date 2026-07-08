@@ -5,7 +5,7 @@ FROM eclipse-temurin:17-jdk
 WORKDIR /app
 
 # Step 3: Copy JAR file into container
-COPY HMS/HMS/target/HMS-0.0.1-SNAPSHOT.jar app.jar
+COPY /HMS/HMS/target/HMS-0.0.1-SNAPSHOT.jar app.jar
 # Step 4: Run the JAR
 ENTRYPOINT ["java","-jar","app.jar"]
 # Step 1: Build stage
